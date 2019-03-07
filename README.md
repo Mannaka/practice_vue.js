@@ -1,29 +1,14 @@
-# my-project
+# TODO List
 
-## Project setup
+## 使い方
 ```
-npm install
-```
+・テキストボックスにtodoを入力してAddボタンを押す
+とタスクが表示される
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+・テキストボックスが空白の状態でAddボタンを押しても
+なにもおこらない
 
-### Compiles and minifies for production
-```
-npm run build
-```
+・タスクのチェックボックスをクリックすると完了となり、横線が引かれる
 
-### Run your tests
+・タスクのDeleteボタンを押すとそのタスクが削除される
 ```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -1,8 +1,24 @@
-import Vue from 'vue'
-import App from './App.vue'
+var app = new Vue({
+  el: '#app',
+  data:{
+    newItem: '',
+    todos: []
+  },
+  methods: {
+    addItem: function(event){
+      //alert()
+      if(this.newItem == '') return;
 
-Vue.config.productionTip = false
-
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+      var todo = {
+        item: this.newItem,
+        isDone: false
+      };
+      this.todos.push(todo)
+      this.newItem =''
+    },
+    deleteItem: function(index){
+      //alert(index)
+      this.todos.splice(index, 1)
+    }
+  }
+})
